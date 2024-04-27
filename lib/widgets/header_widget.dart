@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:get/get.dart';
@@ -30,8 +28,8 @@ class _HeaderWiggetState extends State<HeaderWigget> {
   }
 
 // for get city name funtion
-  getAddress(lat, Lon) async {
-    List<Placemark> placemarks = await placemarkFromCoordinates(lat, Lon);
+  getAddress(lat, lon) async {
+    List<Placemark> placemarks = await placemarkFromCoordinates(lat, lon);
 
     Placemark placemark = placemarks[0];
     setState(() {

@@ -1,6 +1,9 @@
 class WeatherDataCurrent {
   final Current current;
   WeatherDataCurrent({required this.current});
+  // samj nhi aaya
+  factory WeatherDataCurrent.fromJson(Map<String, dynamic> json) =>
+      WeatherDataCurrent(current: Current.fromJson(json['current']));
 }
 
 class Current {
