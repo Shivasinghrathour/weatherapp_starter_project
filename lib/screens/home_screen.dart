@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
             : ListView(
                 scrollDirection: Axis.vertical,
                 children: [
-                  Text("data"),
+                  SizedBox(height: 20),
                   HeaderWigget(),
                 ],
               )),
